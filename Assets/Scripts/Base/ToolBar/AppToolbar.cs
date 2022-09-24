@@ -74,17 +74,9 @@ public class AppToolbar : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         sizeOfSpace = new Vector2(widthOfSpace * 1.1f, widthOfSpace);
         
         Vector2 tempTransform = new Vector2(widthOfSpace/4, 0);
-        int counter = 0;
-        int limit = 50;
         while (tempTransform.x <= rectWidth - widthOfSpace) {
             spaces.Add(new Vector2(tempTransform.x, tempTransform.y));
             tempTransform.x += widthOfSpace * 1.1f;
-            Debug.Log(tempTransform);
-            counter++;
-            if (counter >= 50)
-            {
-                break;
-            }
         }
     }
 

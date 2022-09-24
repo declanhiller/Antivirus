@@ -12,10 +12,10 @@ public class OperatingSystem : MonoBehaviour{
 
 
     public void Awake() {
-        Debug.Log("awake");
         desktop = GameObject.FindGameObjectWithTag("Desktop").GetComponent<Desktop>();
         desktop.Init();
         Settings settings = new Settings();
+        settings.Init();
         apps.Add(Settings.NAME, settings);
 
         // StartAllApps();
