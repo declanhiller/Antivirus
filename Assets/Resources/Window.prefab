@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3336725816814311963}
   - component: {fileID: 3336725816814311957}
   - component: {fileID: 3336725816814311962}
+  - component: {fileID: 7912726746425118231}
   m_Layer: 5
   m_Name: TopBar
   m_TagString: Untagged
@@ -79,6 +80,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7912726746425118231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336725816814311960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccdf4e1db7e14acabe86b278c6fef0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3336725816966115662
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +334,7 @@ GameObject:
   - component: {fileID: 3336725818136181300}
   m_Layer: 5
   m_Name: WindowContent
-  m_TagString: Untagged
+  m_TagString: Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

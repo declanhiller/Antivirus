@@ -12,6 +12,7 @@ public class ColliderCaster : MonoBehaviour {
 
     void Start() {
         rectTransform = GetComponent<RectTransform>();
+        gameObject.layer = 6;
     }
 
     // Update is called once per frame
@@ -19,9 +20,6 @@ public class ColliderCaster : MonoBehaviour {
         if (collider == null) {
             collider = GenerateColliderObject();
         }
-
-        
-        
         // Vector3 transformPoint = rectTransform.TransformPoint(new Vector3());
 
         Vector3 screenToWorldPoint = rectTransform.transform.position;

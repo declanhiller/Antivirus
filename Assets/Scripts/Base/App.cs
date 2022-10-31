@@ -29,13 +29,14 @@ public abstract class App {
 
     public void Open()
     {
-        GameObject window = Object.Instantiate(WINDOW_PREFAB);
+        GameObject window = Object.Instantiate(WINDOW_PREFAB, Desktop.INSTANCE.transform);
         for (int i = 0; i < window.transform.childCount; i++)
         {
             Transform transform = window.transform.GetChild(i);
             if (transform.CompareTag("Content"))
             {
-                transform.gameObject.AddComponent(GetWindowContent());
+                Component addComponent = transform.gameObject.AddComponent(GetWindowContent());
+                window.GetComponent<Window>().content = addComponent as WindowContent;
                 break;
             }
         }

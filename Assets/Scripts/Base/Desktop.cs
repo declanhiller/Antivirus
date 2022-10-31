@@ -8,8 +8,12 @@ public class Desktop : MonoBehaviour {
     
     private Texture2D background;
     private AppToolbar toolbar;
+    public static Desktop INSTANCE;
 
-    
+    private void Start()
+    {
+        INSTANCE = this;
+    }
 
     public void Init() {
         toolbar = GameObject.FindGameObjectWithTag("AppToolbar").GetComponent<AppToolbar>();

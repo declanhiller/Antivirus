@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class Window : MonoBehaviour
 {
-    private WindowContent content { get; set; }
+    public WindowContent content { get; set; }
 
+    
 
     public void Maximize()
     {
-        Destroy(content.gameObject);
+        
     }
 
     public void Minimize()
@@ -18,7 +19,7 @@ public class Window : MonoBehaviour
 
     public void Close()
     {
-        
+        Destroy(gameObject);
     }
     
 }
